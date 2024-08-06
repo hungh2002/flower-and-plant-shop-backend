@@ -3,6 +3,8 @@ package com.hungh2002.config;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 /**
  * DBConnection
@@ -10,6 +12,7 @@ import java.sql.SQLException;
 public class DBConnection {
 
     protected Connection connection = null;
+
 
     public DBConnection() {
         String databaseUrl = "jdbc:" + GlobalVariable.RDBMS + "://" + GlobalVariable.HOST + ":"

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="ALL">
+    <Appenders>
+        <File name="LogToFile" fileName="logs/app.log">
+            <PatternLayout
+                pattern="%highlight{[%-5level] %d{yyy-MM-dd HH:mm:ss} [%t] %c{2} : %message %n}" />
+        </File>
+    </Appenders>
+    <Loggers>
+        <Root level="all">
+            <AppenderRef ref="LogToFile" />
+        </Root>
+    </Loggers>
+</Configuration>
